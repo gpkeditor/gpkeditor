@@ -1,17 +1,18 @@
 <template>
 <div id="gpk-editor">
-  <textarea :value="input" @input="update"></textarea>
-  <div v-html="compiledMarkdown"></div>
+  <textarea :value="input" @input="update" class="input"></textarea>
+  <div v-html="compiledMarkdown" class="preview"></div>
 </div>
 </template>
 
 <script>
 import parser from '../../../gpkparser/parser.js'
+import markdown from './markdown.js'
 export default {
   name: 'gpk-editor',
   data () {
     return {
-      input: '# hello'
+      input: markdown
     }
   },
   computed: {
@@ -31,21 +32,21 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-html, body, #editor {
+html, body, #gpk-editor {
   margin: 0;
   height: 100%;
   font-family: 'Helvetica Neue', Arial, sans-serif;
   color: #333;
 }
 
-textarea, #editor div {
-  display: inline-block;
-  width: 49%;
+textarea, .preview {
   height: 100%;
+  overflow-y: scroll;
+  padding: 20px;
+  width calc(50% - 44px);
   vertical-align: top;
-  box-sizing: border-box;
-  padding: 0 20px;
 }
+
 
 textarea {
   border: none;
@@ -55,10 +56,12 @@ textarea {
   background-color: #f6f6f6;
   font-size: 14px;
   font-family: 'Monaco', courier, monospace;
-  padding: 20px;
 }
 
-code {
-  color: #f66;
+.preview {
+  display: inline-block;
+  overflow-x hidden;
+  word-wrap: break-word;
+  word-break: normal;
 }
 </style>
