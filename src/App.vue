@@ -20,9 +20,9 @@ html, body, #app ,.view
 .view
   width 100%
 #app
-  // font-family 'Avenir', Helvetica, Arial, sans-serif
-  // -webkit-font-smoothing antialiased
-  // -moz-osx-font-smoothing grayscale
+  font-family 'Avenir', Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
   // text-align center
   color #2c3e50
 
@@ -34,6 +34,11 @@ html, body, #app ,.view
 }
 
 // markdown editor
+
+p {
+  line-height: 27px;
+}
+
 pre {
   border-color: #D3DAEA;
   display: block;

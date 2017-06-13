@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import parser from '../../../gpkparser/parser.js'
+import parser from '../../../gpkparser/index.js'
 import markdown from './markdown.js'
 export default {
   name: 'gpk-editor',
@@ -17,7 +17,7 @@ export default {
   },
   computed: {
     compiledMarkdown: function () {
-      return parser.parse(this.input)
+      return parser(this.input)
     }
   },
   methods: {
