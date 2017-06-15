@@ -52,7 +52,7 @@ pre {
   padding: 0 10px;
 }
 
-code {
+pre code {
   color: #f66;
   padding: 0;
   font-size: inherit;
@@ -96,6 +96,18 @@ table, table>thead>tr>th, table>thead>tr>td, table>tbody>tr>th, table>tbody>tr>t
 table {
   border-collapse: collapse;
 }
+
+a {
+  color: #A0AABF;
+  text-decoration: underline;
+}
+
+code {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
+
 
 
 

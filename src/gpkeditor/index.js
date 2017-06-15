@@ -1,7 +1,7 @@
-import GpkEditor from './GpkEditor.vue';
+import GPKEditor from './GPKEditor.vue';
 
-GpkEditor.install = function(Vue) {
-  Vue.component(GpkEditor.name, GpkEditor);
+GPKEditor.install = function(Vue) {
+  Vue.component(GPKEditor.name, GPKEditor);
 };
 
-export default GpkEditor;
+export default GPKEditor;

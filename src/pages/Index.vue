@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import GPKEditor from '../gpkeditor/GpkEditor.vue'
+import GPKEditor from '../gpkeditor/GPKEditor.vue'
 export default {
   name: 'index-view',
   components: {
