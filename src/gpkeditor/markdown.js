@@ -73,14 +73,14 @@ $ NODE_ENV=production node app
 
 Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
 
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md] [PlDb] |
-| Github | [plugins/github/README.md] [PlGh] |
-| Google Drive | [plugins/googledrive/README.md] [PlGd] |
-| OneDrive | [plugins/onedrive/README.md] [PlOd] |
-| Medium | [plugins/medium/README.md] [PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md] [PlGa] |
+| Plugin | README | haha |
+| ------ | ------ | ------ |
+| Dropbox | [plugins/dropbox/README.md] [PlDb] | test |
+| Github | [plugins/github/README.md] [PlGh] | test |
+| Google Drive | [plugins/googledrive/README.md] [PlGd] | test |
+| OneDrive | [plugins/onedrive/README.md] [PlOd] | test |
+| Medium | [plugins/medium/README.md] [PlMe] | test |
+| Google Analytics | [plugins/googleanalytics/README.md] [PlGa] | test |
 
 
 ### Development
@@ -93,16 +93,19 @@ Make a change in your file and instantanously see your updates!
 Open your favorite Terminal and run these commands.
 
 First Tab:
+
 \`\`\`sh
 $ node app
 \`\`\`
 
 Second Tab:
+
 \`\`\`sh
 $ gulp watch
 \`\`\`
 
 (optional) Third:
+
 \`\`\`sh
 $ karma test
 \`\`\`
