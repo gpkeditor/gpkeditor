@@ -9,6 +9,8 @@
 import parser from '../../../gpkparser/index.js'
 import markdown from './markdown.js'
 const regex = /^\s*(\-|\*|\>)(\s*)([\S]+)/g;
+
+
 export default {
   name: 'gpk-editor',
   data () {
