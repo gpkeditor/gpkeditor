@@ -9,7 +9,7 @@
     "prod": "webpack --config build/webpack.config.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "main": "dist/gpkeditor.js",
   "files": [
