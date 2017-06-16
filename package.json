@@ -8,7 +8,8 @@
     "build": "node build/build.js",
     "prod": "webpack --config build/webpack.config.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
-    "test": "npm run unit"
+    "test": "npm run unit",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "main": "dist/gpkeditor.js",
   "files": [
@@ -41,6 +42,7 @@
     "json-loader": "^0.5.4",
     "opn": "^5.0.0",
     "ora": "^1.2.0",
+    "push-dir": "^0.4.1",
     "shelljs": "^0.7.7",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.4.0",
@@ -56,5 +58,10 @@
   "engines": {
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
+  },
+  "dependencies": {
+    "vue": "^2.1.10",
+    "vue-router": "^2.4.0",
+    "gpkparser": "^1.0.3"
   }
 }

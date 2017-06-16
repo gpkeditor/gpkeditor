@@ -6,7 +6,8 @@
 </template>
 
 <script>
-import parser from '../../../gpkparser/index.js'
+import parser from '../gpkparser/index.js'
+// import parser from 'gpkparser'
 import markdown from './markdown.js'
 const regex = /^\s*(\-|\*|\>)(\s*)([\S]+)/g;
 

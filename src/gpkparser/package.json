@@ -1,0 +1,23 @@
+{
+  "name": "gpkparser",
+  "version": "1.0.3",
+  "description": "A markdown parser. Built for speed.",
+  "keywords": [
+    "markdown"
+  ],
+  "tags": [
+    "markdown"
+  ],
+  "main": "/build/gpkparser.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=prod ./node_modules/.bin/webpack"
+  },
+  "author": "Eric <github@ericjj.com>",
+  "license": "GPL",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "webpack": "^2.6.1"
+  }
+}
