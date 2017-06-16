@@ -21,4 +21,4 @@ console.log(parser.parse('# gpkparser'))
 
 # Demo
 
-https://github.com/ericjjj/gpkeditor
+https://github.com/gpkeditor/gpkeditor
