@@ -155,6 +155,7 @@ textarea {
 
 #gpk-editor {
   padding 0 5%
+  height 100%
   p {
     line-height: 27px;
   }
