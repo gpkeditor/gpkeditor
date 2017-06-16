@@ -2,7 +2,7 @@
 > markdown parser with peg.js
 
 
-[Peg.js Source Code](https://gist.github.com/ericjjj/50ab67b352b1fe4ae91e985a85e33d98)
+[Peg.js Source Code](https://github.com/gpkeditor/gpkeditor/blob/master/src/gpkparser/peg-code.peg)
 
 # Install
 
