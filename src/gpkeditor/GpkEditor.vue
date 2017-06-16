@@ -123,20 +123,16 @@ function setCaretPosition(ctrl, pos){//设置光标位置函数
 
 </script>
 
-<style lang="stylus" scoped>
-html, body, #gpk-editor {
-  margin: 0;
-  height: 100%;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  color: #333;
-}
+<style lang="stylus">
+
 
 textarea, .preview {
   height: 100%;
   overflow-y: scroll;
   padding: 20px;
-  width calc(50% - 44px);
+  width calc(50% - 46px);
   vertical-align: top;
+  border 1px solid #E1E1E1;
 }
 
 
@@ -155,5 +151,81 @@ textarea {
   overflow-x hidden;
   word-wrap: break-word;
   word-break: normal;
+}
+
+#gpk-editor {
+  padding 0 5%
+  p {
+    line-height: 27px;
+  }
+
+  pre {
+    border-color: #D3DAEA;
+    display: block;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f7fa;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+
+  pre code {
+    color: #f66;
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border-radius: 0;
+    line-height: 30px;
+  }
+
+
+  blockquote {
+    color: #666666;
+    margin: 0;
+    padding-left: 3em;
+    border-left: 0.5em #EEE solid;
+
+    p {
+      margin: 0px;
+      line-height: 26px;
+    }
+  }
+
+  ul {
+    li {
+      line-height 30px
+      // margin-left 10px
+    }
+  }
+
+  hr {
+    box-sizing: content-box;
+    height: 0;
+  }
+
+  table, table>thead>tr>th, table>thead>tr>td, table>tbody>tr>th, table>tbody>tr>td, table>tfoot>tr>th, table>tfoot>tr>td {
+      border: 1px solid #ddd;
+      padding: 10px;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+
+  a {
+    color: #A0AABF;
+    text-decoration: underline;
+  }
+
+  code {
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+  }
 }
 </style>

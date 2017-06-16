@@ -4,7 +4,7 @@ import Index from './pages/Index.vue'
 
 Vue.use(VueRouter)
 
-const base = 'GRAPE - '
+const base = 'GPKEDITOR - '
 
 const router = new VueRouter({
   mode: 'history',

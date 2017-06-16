@@ -1,7 +1,14 @@
 <template lang="jade">
 #app
+  .header
+    img(src='http://ohusmobs2.bkt.clouddn.com/20170616149758498873692.png')
   transition(name="fade")
     router-view
+  .footer
+    | ©
+    a(src='https://github.com/ericjjj') Eric &nbsp
+    a(src='https://github.com/gpkeditor/gpkeditor') Github
+    | &nbsp
 </template>
 
 <script>
@@ -33,80 +40,26 @@ html, body, #app ,.view
   opacity: 0
 }
 
+.header {
+  margin 50px 5%;
+}
+
+.footer {
+  position: relative;
+  bottom: -60px;
+  padding-bottom 10px
+  text-align center
+  a {
+    color: #A0AABF;
+    text-decoration: none;
+    cursor pointer
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 // markdown editor
-
-p {
-  line-height: 27px;
-}
-
-pre {
-  border-color: #D3DAEA;
-  display: block;
-  word-break: break-all;
-  word-wrap: break-word;
-  color: #333;
-  background-color: #f5f7fa;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 30px;
-  padding: 0 10px;
-}
-
-pre code {
-  color: #f66;
-  padding: 0;
-  font-size: inherit;
-  color: inherit;
-  white-space: pre-wrap;
-  background-color: transparent;
-  border-radius: 0;
-  line-height: 30px;
-}
-
-
-blockquote {
-  color: #666666;
-  margin: 0;
-  padding-left: 3em;
-  border-left: 0.5em #EEE solid;
-
-  p {
-    margin: 0px;
-    line-height: 26px;
-  }
-}
-
-ul {
-  li {
-    line-height 30px
-    // margin-left 10px
-  }
-}
-
-hr {
-  box-sizing: content-box;
-  height: 0;
-}
-
-table, table>thead>tr>th, table>thead>tr>td, table>tbody>tr>th, table>tbody>tr>td, table>tfoot>tr>th, table>tfoot>tr>td {
-    border: 1px solid #ddd;
-    padding: 10px;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-a {
-  color: #A0AABF;
-  text-decoration: underline;
-}
-
-code {
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 4px;
-}
 
 
 
